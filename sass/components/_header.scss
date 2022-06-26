@@ -1,0 +1,110 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--logo-black);
+  text-decoration: none;
+  line-height: 1.19;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.logo--margin {
+  margin-right: 93px;
+}
+
+.logo__web {
+  color: var(--logo-bgr-blue);
+}
+
+.navigation,
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.navigation__item {
+  margin-right: 50px;
+}
+
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation__link {
+  display: block;
+  color: var(--main-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  background-color: var(--text-hover-wight);
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animating);
+}
+
+.navigation__link:hover,
+.navigation__link:focus {
+  color: var(--logo-bgr-blue);
+}
+
+.navigation--actual {
+  color: var(--logo-bgr-blue);
+  position: relative;
+  transition-property: background-color;
+}
+
+.navigation--actual::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  top: 100%;
+  left: 0;
+  background-color: var(--logo-bgr-blue);
+  transform: translate(0, -100%);
+}
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts__link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--content-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animating);
+}
+.contacts__link:hover,
+.contacts__link:focus {
+  color: var(--logo-bgr-blue);
+}
+
+.contacts__envelope {
+  display: flex;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contacts__smartphone {
+  display: inline-flex;
+  margin-right: 10px;
+  fill: currentColor;
+  background-size: auto;
+  background-position: 50% 50%;
+}

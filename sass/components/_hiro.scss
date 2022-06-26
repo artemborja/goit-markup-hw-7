@@ -1,0 +1,60 @@
+.hiro {
+  max-width: 1600px;
+  padding-top: 200px;
+  margin: 0 auto;
+  padding: 0 auto;
+  padding-bottom: 200px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Img-hiro.jpg);
+  background-color: var(--bgr-hero-color);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hiro__headline {
+  color: var(--text-hover-wight);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hiro__btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: var(--text-hover-wight);
+  background-color: var(--logo-bgr-blue);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: 0;
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animating);
+}
+
+.hiro__btn:hover,
+.hiro__btn:focus {
+  background-color: var(--btn-hiro-hover);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.hiro__btn:active {
+  box-shadow: none;
+}

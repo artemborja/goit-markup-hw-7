@@ -1,0 +1,186 @@
+:root {
+  --main-text-color: #212121;
+  --content-text-color: #757575;
+  --logo-bgr-blue: #2196f3;
+  --bgr-hero-color: #2f303a;
+  --logo-black: #000000;
+  --text-hover-wight: #ffffff;
+  --btn-hiro-hover: #188ce8;
+  --addr-footer-white: rgba(255, 255, 255, 0.6);
+  --bgr-team: #f5f4fa;
+  --social-color: #afb1b8;
+  --animating: cubic-bezier(0.4, 0, 0.2, 1);
+  --modal-text-color: rgba(117, 117, 117, 1);
+  --modal-frame-color: rgba(33, 33, 33, 0.2);
+  --shadow-cards: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--logo-black);
+  text-decoration: none;
+  line-height: 1.19;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.logo--margin {
+  margin-right: 93px;
+}
+
+.logo__web {
+  color: var(--logo-bgr-blue);
+}
+
+.navigation,
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.navigation__item {
+  margin-right: 50px;
+}
+
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation__link {
+  display: block;
+  color: var(--main-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  background-color: var(--text-hover-wight);
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animating);
+}
+
+.navigation__link:hover,
+.navigation__link:focus {
+  color: var(--logo-bgr-blue);
+}
+
+.navigation--actual {
+  color: var(--logo-bgr-blue);
+  position: relative;
+  transition-property: background-color;
+}
+
+.navigation--actual::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  top: 100%;
+  left: 0;
+  background-color: var(--logo-bgr-blue);
+  transform: translate(0, -100%);
+}
+
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts__link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--content-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animating);
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
+  color: var(--logo-bgr-blue);
+}
+
+.contacts__envelope {
+  display: flex;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contacts__smartphone {
+  display: inline-flex;
+  margin-right: 10px;
+  fill: currentColor;
+  background-size: auto;
+  background-position: 50% 50%;
+}
+
+.hiro {
+  max-width: 1600px;
+  padding-top: 200px;
+  margin: 0 auto;
+  padding: 0 auto;
+  padding-bottom: 200px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-hiro.jpg);
+  background-color: var(--bgr-hero-color);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hiro__headline {
+  color: var(--text-hover-wight);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hiro__btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: var(--text-hover-wight);
+  background-color: var(--logo-bgr-blue);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: 0;
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animating);
+}
+
+.hiro__btn:hover,
+.hiro__btn:focus {
+  background-color: var(--btn-hiro-hover);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.hiro__btn:active {
+  box-shadow: none;
+}/*# sourceMappingURL=main.css.map */
