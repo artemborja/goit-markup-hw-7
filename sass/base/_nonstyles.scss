@@ -1,0 +1,38 @@
+body {
+  font-family: "Roboto", "Raleway", sens-serif;
+  color: var(--main-text-color);
+  letter-spacing: 0.03em;
+  background-color: var(--text-hover-wight);
+  font-size: 14px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol,
+li {
+  margin: 0;
+  padding-left: 0;
+}
+
+.list {
+  list-style: none;
+}

@@ -1,0 +1,54 @@
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.trait {
+  width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@mixin features() {
+  content: "";
+  display: flex;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--bgr-team);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.antena::before {
+  @include features;
+  background-image: url(../images/antenna.svg);
+}
+
+.clock::before {
+  @include features;
+  background-image: url(../images/clock.svg);
+}
+
+.diagram::before {
+  @include features;
+  background-image: url(../images/diagram.svg);
+}
+
+.astronaut::before {
+  @include features;
+  background-image: url(../images/astronaut.svg);
+}
+
+.trait__headline {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.trait__text {
+  color: var(--content-text-color);
+  line-height: 1.7;
+}

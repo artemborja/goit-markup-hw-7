@@ -1,0 +1,25 @@
+.craft {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.craft__text {
+  position: absolute;
+  top: 100%;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+  transform: translate(0, -100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-hover-wight);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+}

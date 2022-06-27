@@ -16,6 +16,96 @@
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+body {
+  font-family: "Roboto", "Raleway", sens-serif;
+  color: var(--main-text-color);
+  letter-spacing: 0.03em;
+  background-color: var(--text-hover-wight);
+  font-size: 14px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol,
+li {
+  margin: 0;
+  padding-left: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.visualy-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.headline {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.container--display {
+  display: flex;
+  align-items: baseline;
+}
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  padding-bottom: 94px;
+}
+
+.section--bgr {
+  background-color: var(--bgr-team);
+  padding-top: 94px;
+}
+
+.section--paddtop {
+  padding-top: 94px;
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -30,7 +120,6 @@
   padding-top: 24px;
   padding-bottom: 25px;
 }
-
 .logo--margin {
   margin-right: 93px;
 }
@@ -39,17 +128,12 @@
   color: var(--logo-bgr-blue);
 }
 
-.navigation,
-.contacts {
+.navigation {
   display: flex;
   margin-left: auto;
 }
 
 .navigation__item {
-  margin-right: 50px;
-}
-
-.contacts__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -67,9 +151,7 @@
   transition-duration: 250ms;
   transition-timing-function: var(--animating);
 }
-
-.navigation__link:hover,
-.navigation__link:focus {
+.navigation__link:hover, .navigation__link:focus {
   color: var(--logo-bgr-blue);
 }
 
@@ -78,7 +160,6 @@
   position: relative;
   transition-property: background-color;
 }
-
 .navigation--actual::after {
   content: "";
   position: absolute;
@@ -89,6 +170,11 @@
   left: 0;
   background-color: var(--logo-bgr-blue);
   transform: translate(0, -100%);
+}
+
+.contacts {
+  display: flex;
+  margin-left: auto;
 }
 
 .contacts__item:not(:last-child) {
@@ -109,9 +195,7 @@
   transition-duration: 250ms;
   transition-timing-function: var(--animating);
 }
-
-.contacts__link:hover,
-.contacts__link:focus {
+.contacts__link:hover, .contacts__link:focus {
   color: var(--logo-bgr-blue);
 }
 
@@ -174,13 +258,372 @@
   transition-duration: 250ms;
   transition-timing-function: var(--animating);
 }
-
-.hiro__btn:hover,
-.hiro__btn:focus {
+.hiro__btn:hover, .hiro__btn:focus {
   background-color: var(--btn-hiro-hover);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
 .hiro__btn:active {
+  box-shadow: none;
+}
+
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.trait {
+  width: 270px;
+}
+.trait:not(:last-child) {
+  margin-right: 30px;
+}
+
+.antena::before {
+  content: "";
+  display: flex;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--bgr-team);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/antenna.svg);
+}
+
+.clock::before {
+  content: "";
+  display: flex;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--bgr-team);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/clock.svg);
+}
+
+.diagram::before {
+  content: "";
+  display: flex;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--bgr-team);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/diagram.svg);
+}
+
+.astronaut::before {
+  content: "";
+  display: flex;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--bgr-team);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/astronaut.svg);
+}
+
+.trait__headline {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.trait__text {
+  color: var(--content-text-color);
+  line-height: 1.7;
+}
+
+.craft {
+  position: relative;
+}
+.craft:not(:last-child) {
+  margin-right: 30px;
+}
+
+.craft__text {
+  position: absolute;
+  top: 100%;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+  transform: translate(0, -100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-hover-wight);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.team {
+  border-radius: 0 0 4px 4px;
+  background-color: var(--text-hover-wight);
+  box-shadow: var(--shadow-cards);
+}
+.team:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team__container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team__headline {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.team__text {
+  color: var(--content-text-color);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon__item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icon__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50% 50%;
+  color: var(--social-color);
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animating);
+}
+.icon__link:hover, .icon__link:focus {
+  background-color: var(--logo-bgr-blue);
+  color: var(--text-hover-wight);
+}
+
+.icon__picture {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients__link {
+  display: flex;
+  width: 170px;
+  height: 94px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  color: var(--social-color);
+  border-radius: 4px;
+  border: 1px solid var(--social-color);
+  transition-property: color, fill, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animating);
+}
+.clients__link:hover, .clients__link:focus {
+  color: var(--logo-bgr-blue);
+  border-color: var(--logo-bgr-blue);
+  fill: var(--logo-bgr-blue);
+}
+
+.client__picture {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
+.footer {
+  background-color: var(--bgr-hero-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.address {
+  font-style: normal;
+  margin-left: auto;
+}
+
+.address__logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--text-hover-wight);
+  text-decoration: none;
+  line-height: 1.19;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__linker {
+  text-decoration: none;
+  color: var(--text-hover-wight);
+  line-height: 2;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animating);
+}
+.address__linker:hover, .address__linker:focus {
+  color: var(--logo-bgr-blue);
+}
+
+.address__link {
+  text-decoration: none;
+  line-height: 1.71;
+  color: var(--addr-footer-white);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animating);
+}
+.address__link:hover, .address__link:focus {
+  color: var(--logo-bgr-blue);
+}
+
+.networks {
+  color: var(--text-hover-wight);
+  margin-left: 70px;
+}
+
+.networks__text,
+.subscribe__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--text-hover-wight);
+}
+
+.networks__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.networks__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.networks__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.network__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50% 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  align-items: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animating);
+}
+.network__link:hover, .network__link:focus {
+  background-color: var(--logo-bgr-blue);
+}
+
+.network__picture {
+  width: 20px;
+  height: 20px;
+  fill: var(--text-hover-wight);
+}
+
+.subscribe {
+  margin-left: auto;
+}
+
+.subscribe__input {
+  display: flex;
+  align-items: center;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: var(--bgr-hero-color);
+  margin-right: 12px;
+  color: var(--addr-footer-white);
+  font-size: 16px;
+  line-height: 1.25;
+  transition: border-color 250ms var(--animating);
+}
+.subscribe__input:hover, .subscribe__input:focus {
+  border-color: var(--logo-bgr-blue);
+}
+
+.subscribe__picture {
+  margin-left: 10px;
+}
+
+.subscribe__btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: var(--text-hover-wight);
+  background-color: var(--logo-bgr-blue);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 28px;
+  border-radius: 4px;
+  border: 0;
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animating);
+}
+.subscribe__btn:hover, .subscribe__btn:focus {
+  background-color: var(--btn-hiro-hover);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.subscribe__btn:active {
   box-shadow: none;
 }/*# sourceMappingURL=main.css.map */

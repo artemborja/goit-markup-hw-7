@@ -1,3 +1,12 @@
 @import "./utils/variables";
+@import "./base/nonstyles";
+@import "./utils/hiden";
+@import "./base/fonts";
+@import "./base/positioning";
 @import "./components/header";
 @import "./components/hiro";
+@import "./components/features";
+@import "./components/trade";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/footer";
