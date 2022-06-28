@@ -13,7 +13,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
@@ -84,7 +83,7 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button class="hiro__btn" type="button" data-modal-open>
+          <button class="hiro__button button" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -448,7 +447,7 @@
               required
             />
             <label for="emeil"></label>
-            <button class="subscribe__btn" type="submit">
+            <button class="subscribe__button button" type="submit">
               Подписаться
               <svg class="subscribe__picture" width="24px" height="24px">
                 <use href="./images/icons-six.svg#icon-plan"></use>
@@ -461,54 +460,54 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close" type="button" data-modal-close>
-          <svg class="close-picture" width="11px" height="11px">
+          <svg class="close__picture" width="11px" height="11px">
             <use href="./images/cross-defs.svg#icon-cross"></use>
           </svg>
         </button>
-        <p class="modal-head">Оставьте свои данные, мы вам перезвоним</p>
-        <form class="modal-form" action="">
-          <div class="form-field">
-            <label class="modal-text" for="name">Имя</label
-            ><input class="modal-data" type="text" id="name" placeholder=" " />
-            <svg class="modal-icons" width="12" height="12">
+        <p class="modal__text">Оставьте свои данные, мы вам перезвоним</p>
+        <form class="data" action="">
+          <div class="data__field">
+            <label class="data__text" for="name">Имя</label
+            ><input class="data__frame" type="text" id="name" placeholder=" " />
+            <svg class="data__icons" width="12" height="12">
               <use href="./images/big-sprite.svg#icon-person"></use>
             </svg>
           </div>
-          <div class="form-field">
-            <label class="modal-text" for="tel">Телефон </label
-            ><input class="modal-data" type="tel" id="tel" placeholder=" " />
-            <svg class="modal-icons" width="13" height="13">
+          <div class="data__field">
+            <label class="data__text" for="tel">Телефон </label
+            ><input class="data__frame" type="tel" id="tel" placeholder=" " />
+            <svg class="data__icons" width="13" height="13">
               <use href="./images/big-sprite.svg#icon-phonepipe"></use>
             </svg>
           </div>
-          <div class="form-field">
-            <label class="modal-text" for="email">Почта</label
+          <div class="data__field">
+            <label class="data__text" for="email">Почта</label
             ><input
-              class="modal-data"
+              class="data__frame"
               type="email"
               name=""
               id="email"
               placeholder=" "
             />
-            <svg class="modal-icons" width="15" height="12">
+            <svg class="data__icons" width="15" height="12">
               <use href="./images/big-sprite.svg#icon-black-envelope"></use>
             </svg>
           </div>
-          <div class="form-field">
-            <label class="modal-text" for="coments">Комментарий</label
+          <div class="data__field">
+            <label class="data__text" for="coments">Комментарий</label
             ><textarea
-              class="comments"
+              class="data__comments"
               name="coments"
               id="coments"
               rows="100%"
               placeholder="Введите текст"
             ></textarea>
           </div>
-          <div class="form-row">
-            <label class="checkbox-text" for="checkbox"
+          <div class="conditions">
+            <label class="conditions__text" for="checkbox"
               >Соглашаюсь с рассылкой и принимаю
               <input
-                class="checkbox-agree"
+                class="conditions__tick"
                 type="checkbox"
                 name="agree"
                 value="checkbox"
@@ -516,11 +515,11 @@
                 placeholder=" "
                 required
               />
-              <span class="checkbox-icon"></span>
+              <span class="conditions__icon"></span>
             </label>
-            <a class="link-conditions" href="#">Условия договора</a>
+            <a class="conditions__link" href="#">Условия договора</a>
           </div>
-          <button class="hiro-btn modal-btn" type="submit">Отправить</button>
+          <button class="data__button button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
